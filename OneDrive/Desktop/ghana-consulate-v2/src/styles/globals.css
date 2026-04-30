@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply font-sans text-ghana-black antialiased bg-white; }
+  h1,h2,h3,h4 { @apply font-serif; }
+}
+
+@layer components {
+  .ghana-stripe {
+    height: 5px;
+    background: linear-gradient(to right, #CF0A0A 33.33%, #D4A017 33.33%, #D4A017 66.66%, #006B3F 66.66%);
+  }
+  .page-container { @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8; }
+  .section-heading { @apply font-serif text-2xl md:text-3xl font-semibold text-ghana-black mb-2; }
+  .section-divider { @apply w-16 h-1 bg-ghana-gold mb-6 rounded-full; }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-ghana-red text-white px-5 py-2.5 rounded text-sm font-medium
+           hover:bg-ghana-red-dark transition-colors duration-200;
+  }
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-ghana-red text-ghana-red px-5 py-2.5 rounded text-sm font-medium
+           hover:bg-ghana-red hover:text-white transition-colors duration-200;
+  }
+  .card {
+    @apply bg-white rounded-lg border border-gray-100 shadow-card hover:shadow-card-hover transition-shadow duration-300;
+  }
+  .prose-content h2 { @apply text-2xl font-serif font-semibold text-ghana-black mb-3 mt-8 pb-2 border-b border-ghana-gold/30; }
+  .prose-content h3 { @apply text-xl font-serif font-semibold text-ghana-green mb-3 mt-6; }
+  .prose-content p { @apply text-gray-700 leading-relaxed mb-4; }
+  .prose-content ul { @apply list-disc ml-6 mb-4 space-y-1.5; }
+  .prose-content li { @apply text-gray-700 leading-relaxed; }
+  .prose-content a { @apply text-ghana-red hover:underline; }
+  .prose-content strong { @apply font-semibold text-ghana-black; }
+}
+
+/* Dropdown */
+.dropdown-menu {
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.nav-item:hover .dropdown-menu,
+.nav-item:focus-within .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}

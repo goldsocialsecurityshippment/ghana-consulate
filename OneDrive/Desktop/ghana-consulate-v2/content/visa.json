@@ -1,0 +1,55 @@
+{
+  "entryRequirements": "All visitors to Ghana must be in possession of valid passports with not less than six (6) months' validity. All visitors entering Ghana who are not exempt, must have valid entry visas issued by a Ghana Diplomatic Mission or Consulate abroad or any other visa-issuing authority mandated by the Ghana Government to act on its behalf. ECOWAS nationals and those of other countries with which the Government of Ghana has specific bilateral agreements are exempted. All documents issued by Ghanaian authorities should be legalised at the Ministry of Foreign Affairs and Regional Integration in Accra and the Judicial Service before presentation.",
+  "conditions": [
+    "Applicant's passport must have validity of at least six (6) months after the date they intend to leave Ghana.",
+    "Visas may be granted to visitors to Ghana for tourism, business or transit purposes.",
+    "Visas may be granted for single or multiple entry.",
+    "Visas must be utilised within three (3) months of the date of issue. Visas valid for up to one year may be granted for specific purposes.",
+    "Visitors are required to have been vaccinated against Yellow Fever at least ten (10) days from the proposed date of entry into Ghana.",
+    "Visa application fees are non-refundable whether your application is successful or not.",
+    "Visitors travelling on business are required to furnish evidence of the fact, while those travelling at the invitation of Ghanaian nationals/residents or Ghanaian institutions should provide a letter of invitation from their hosts.",
+    "Visitors must have proof of a return or through ticket or evidence of booking.",
+    "Persons who enter the country as visitors are not permitted to take up employment even if there happens to be a vacancy on the Immigrant Quota of a prospective employer.",
+    "Travellers are advised to have all the necessary documents before arriving in Ghana.",
+    "Children travelling with or without their parents, must have their own passport or travel document, together with a letter of consent where applicable.",
+    "Additional requirements are needed for journalists and/or film crew who are covering events or shooting films in Ghana. Contact us for more information."
+  ],
+  "processing": "The Visa Application process only commences upon receipt of all the required supporting documents submitted through the online portal. The Consulate reserves the right to require other documentation from applicants. Standard Visa Applications take 10 to 15 working days from the start of the application process. Applicants are advised to submit Visa Applications at least 1 (one) month before the intended date of travel.",
+  "exemptCategories": [
+    {
+      "category": "Category A — ECOWAS States",
+      "description": "Citizens from ECOWAS States by virtue of The Protocol on Free Movement of Persons, the Right of Residence and Establishment (PROTOCOL A/P1/5/79).",
+      "countries": "Benin, Burkina Faso, Cape Verde, Côte D'Ivoire, The Gambia, Guinea, Guinea Bissau, Liberia, Mali, Niger, Nigeria, Senegal, Sierra Leone, Togo."
+    },
+    {
+      "category": "Category B — Diplomatic, Service or Official Passports",
+      "description": "Holders of Diplomatic, Service or Official Passports. Exemptions for this category shall be for a period not exceeding ninety (90) days from date of entry.",
+      "countries": "Brazil, Cuba, Germany, Namibia, China, South Africa, Sudan, Hungary, India, Equatorial Guinea, Morocco, St Kitts & Nevis, Suriname, Venezuela, Malta, Hong Kong (Diplomatic Only), Turkey (Diplomatic Only) and Qatar (Diplomatic Only)."
+    },
+    {
+      "category": "Category C — Visa-Free Nationals",
+      "description": "All nationals of the following countries:",
+      "countries": "Jamaica, Kenya, Singapore, Tanzania, Trinidad and Tobago, Uganda, Zimbabwe, Mauritius, Seychelles, Barbados, Rwanda, Guyana and St. Vincent and Grenadines."
+    },
+    {
+      "category": "Category D — Regional & International Bodies",
+      "description": "Holders of passports of Regional Economic Communities in Africa and the African Economic Community, African Union, United Nations and its Specialised Agencies, The World Bank and the African Development Bank.",
+      "countries": ""
+    },
+    {
+      "category": "Category E — Airside Transit",
+      "description": "All persons in direct airside transit are exempt from visa requirements.",
+      "countries": ""
+    }
+  ],
+  "prohibitedMigrants": [
+    "A person of unsound mind.",
+    "A person considered to be a security risk.",
+    "A person against whom there is a deportation order in force."
+  ],
+  "downloads": [
+    { "label": "Download Joint Guardian Consent Form", "href": "#" },
+    { "label": "Download Single Guardian Consent Form", "href": "#" },
+    { "label": "Download Press Accreditation Form", "href": "#" }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "ghanaLinks": [
+    {
+      "category": "Office of The President",
+      "links": [
+        { "name": "The Presidency", "url": "https://www.presidency.gov.gh/" }
+      ]
+    },
+    {
+      "category": "Government Ministries",
+      "links": [
+        { "name": "Ministry of Energy", "url": "https://www.energymin.gov.gh/" },
+        { "name": "Ministry of Tourism", "url": "https://www.touringghana.com/" },
+        { "name": "Ministry of Health", "url": "https://www.moh.gov.gh/" },
+        { "name": "Ministry of Trade and Industry", "url": "https://www.moti.gov.gh/" },
+        { "name": "Ministry of Communication", "url": "https://www.moc.gov.gh/" }
+      ]
+    },
+    {
+      "category": "Government Agencies",
+      "links": [
+        { "name": "Ghana Extractive Industries Transparency Initiative", "url": "https://www.gheiti.gov.gh/site/" },
+        { "name": "National Accreditation Board", "url": "https://www.nab.gov.gh/" },
+        { "name": "Judicial Service", "url": "https://www.judicial.gov.gh/" },
+        { "name": "Ghana Export Promotion Authority", "url": "https://www.gepaghana.org/" },
+        { "name": "Ghana Investment Promotion Centre", "url": "https://www.gipcghana.com/" },
+        { "name": "Ghana Cocoa Board", "url": "https://www.cocobod.gh/" },
+        { "name": "Parliament of Ghana", "url": "https://www.parliament.gh/" }
+      ]
+    }
+  ],
+  "bermudaLinks": [
+    {
+      "category": "Community",
+      "links": [
+        { "name": "The City of Hamilton", "url": "https://www.cityofhamilton.bm/" }
+      ]
+    },
+    {
+      "category": "Hospitality & Tourism",
+      "links": [
+        { "name": "Bermuda Tourism Authority", "url": "https://www.gotobermuda.com/" },
+        { "name": "Restaurant Reservations", "url": "https://www.table.bm/" },
+        { "name": "Bermuda.com", "url": "https://bermuda.com/" }
+      ]
+    },
+    {
+      "category": "Trade Associations",
+      "links": [
+        { "name": "Association of Bermuda International Companies (ABIC)", "url": "https://abic.bm/" },
+        { "name": "Association of Bermuda Insurance & Reinsurance (ABIR)", "url": "https://www.abir.bm/" },
+        { "name": "Bermuda Business Development Agency", "url": "https://bda.bm/" },
+        { "name": "Bermuda Hotel Association", "url": "https://www.experiencebermuda.com/" }
+      ]
+    },
+    {
+      "category": "Government, Regulators and Law",
+      "links": [
+        { "name": "Bermuda Government", "url": "https://www.gov.bm/" },
+        { "name": "Bermuda Monetary Authority", "url": "https://www.bma.bm/" },
+        { "name": "Bermuda Stock Exchange (BSX)", "url": "https://www.bsx.com/" },
+        { "name": "L. F. Wade International Airport", "url": "https://bermudaairport.com/" },
+        { "name": "US Consulate, Bermuda", "url": "https://bm.usconsulate.gov/" }
+      ]
+    },
+    {
+      "category": "News and Weather",
+      "links": [
+        { "name": "Bermuda Weather Service", "url": "https://www.weather.bm/" },
+        { "name": "Bernews", "url": "https://bernews.com/" },
+        { "name": "The Royal Gazette", "url": "https://www.royalgazette.com/" }
+      ]
+    }
+  ]
+}
