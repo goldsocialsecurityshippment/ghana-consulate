@@ -1,0 +1,47 @@
+{
+  "articles": [
+    {
+      "slug": "honorary-consul-appointment-2021",
+      "title": "Mrs. Ronita Teye-Botchway Appointed as New Honorary Consul",
+      "date": "July 2021",
+      "category": "Announcement",
+      "excerpt": "The Government of Ghana appointed Mrs. Ronita Teye-Botchway as the new Honorary Consul of Ghana in Bermuda in July 2021, continuing the mission's legacy of service.",
+      "content": "The Government of Ghana appointed Mrs. Ronita Teye-Botchway as the Honorary Consul of Ghana in Bermuda in July 2021. Mrs. Teye-Botchway, a well-known and respected member of the Bermudian community, has been closely involved in the work and organisation of the Honorary Consulate for a number of years, particularly in caring for the welfare of Ghanaians living and working in Bermuda. Her appointment ensures continuity and builds on the ground-breaking success established by the late Dr. Leonard Teye-Botchway, the first Honorary Consul of Ghana in Bermuda. Mrs. Teye-Botchway brings a wealth of community experience and a deep commitment to serving both the Ghanaian diaspora and the wider Bermudian community.",
+      "external": false
+    },
+    {
+      "slug": "consulate-website-launch",
+      "title": "Honourary Consulate of Ghana Launches New Official Website",
+      "date": "2025",
+      "category": "News",
+      "excerpt": "The Honourary Consulate of Ghana in Bermuda is pleased to announce the launch of its new official website, bringing consular services and information directly to your doorstep.",
+      "content": "The Honourary Consulate of Ghana in Bermuda is pleased to announce the launch of its new official website. The website has been designed to serve as a comprehensive online presence for the Consulate, providing Ghanaians in Bermuda, Bermudians with an interest in Ghana, and all visitors with easy access to important information and consular services. The site covers visa application guidance, information about Ghana including investment, tourism, and trade opportunities, as well as details about the Consulate team and how to get in touch. The Consulate is committed to continuously improving its services and welcomes feedback from all users of the website.",
+      "external": false
+    }
+  ],
+  "externalLinks": [
+    { "title": "Ghana's Honourary Consul Starts Issuing Visas", "url": "https://bernews.com/2022/07/ghanas-honourary-consul-starts-issuing-visas/", "source": "Bernews", "date": "2022" },
+    { "title": "Ghanaian Govt Present Posthumous Award", "url": "https://bernews.com/2019/10/ghanaian-govt-present-posthumous-award/", "source": "Bernews", "date": "2019" },
+    { "title": "Ghana Awards Honorary Consul-General Dr. Teye-Botchway Posthumously", "url": "https://www.myjoyonline.com/ghana-awards-honorary-consul-general-dr-teye-botchway-posthumously/", "source": "MyJoyOnline", "date": "2019" },
+    { "title": "Ghana's Envoy To Bermuda Laid To Rest", "url": "https://dailyguidenetwork.com/ghanas-envoy-to-bermuda-laid-to-rest/", "source": "Daily Guide Network", "date": "2019" },
+    { "title": "Ghana's Honorary Consul To Bermuda Laid To Rest", "url": "https://www.modernghana.com/news/957771/ghanas-honorary-consul-to-bermuda-laid-to-rest.html", "source": "Modern Ghana", "date": "2019" },
+    { "title": "Dr Leonard Teye-Botchway Laid To Rest", "url": "https://bernews.com/2019/09/dr-leonard-teye-botchway-laid-to-rest/", "source": "Bernews", "date": "2019" },
+    { "title": "Leonard Teye-Botchway (1955–2019)", "url": "https://www.royalgazette.com/other/news/article/20190905/leonard-teye-botchway-1955-2019/", "source": "Royal Gazette", "date": "2019" },
+    { "title": "Ghana Studies Bermuda's Water System", "url": "https://bernews.com/2019/08/ghana-studies-bermuda-water-systems/", "source": "Bernews", "date": "2019" },
+    { "title": "Ghana Offers At-Risk Youths A Chance", "url": "https://www.royalgazette.com/other/news/article/20190730/ghana-offers-at-risk-youths-a-chance/", "source": "Royal Gazette", "date": "2019" },
+    { "title": "Ghana's High Commissioner Visits Bermuda", "url": "https://bernews.com/2019/07/ghanas-high-commissioner-visits-bermuda/", "source": "Bernews", "date": "2019" },
+    { "title": "H.E. Papa Owusu-Ankomah Makes Historic Visit to Bermuda", "url": "https://london.mfa.gov.gh/news-events-details/35/he-papa-owusu-ankomah-makes-historic-visit-to-bermuda", "source": "Ghana MFA London", "date": "2019" },
+    { "title": "Thank You, Bermuda", "url": "https://www.royalgazette.com/other/article/20190713/thank-you-bermuda/", "source": "Royal Gazette", "date": "2019" },
+    { "title": "Condolence Book Opens For Paul Njoroge", "url": "https://bernews.com/2019/03/condolence-book-opens-for-paul-njoroge/", "source": "Bernews", "date": "2019" },
+    { "title": "Banker Loses Family in Plane Crash", "url": "https://www.royalgazette.com/other/news/article/20190312/banker-loses-family-in-plane-crash/", "source": "Royal Gazette", "date": "2019" },
+    { "title": "Condolences Expressed After Tragic Plane Crash", "url": "https://bernews.com/2019/03/condolences-expressed-after-tragic-plane-crash/", "source": "Bernews", "date": "2019" },
+    { "title": "Dr. Teye-Botchway Operates On Wallaby's Eye", "url": "https://bernews.com/2018/10/dr-teye-botchway-operates-on-wallabys-eye/", "source": "Bernews", "date": "2018" },
+    { "title": "Governor Signs Book for Annan", "url": "https://www.royalgazette.com/other/news/article/20180822/governor-signs-book-for-annan/", "source": "Royal Gazette", "date": "2018" },
+    { "title": "Condolence Book Available For Mr. Kofi Annan", "url": "https://bernews.com/2018/08/condolence-book-available-mr-kofi-annan/", "source": "Bernews", "date": "2018" },
+    { "title": "Tributes to UN Secretary-General Annan", "url": "https://www.royalgazette.com/other/news/article/20180820/tributes-to-un-secretary-general-annan/", "source": "Royal Gazette", "date": "2018" },
+    { "title": "Photos: Ghana's 60th Independence Celebration", "url": "https://bernews.com/2017/03/photos-ghanas-60th-independence-day/", "source": "Bernews", "date": "2017" },
+    { "title": "Fancy Working in Ghana? Here's Your Chance", "url": "https://www.royalgazette.com/other/news/article/20160820/fancy-working-in-ghana-heres-your-chance/", "source": "Royal Gazette", "date": "2016" },
+    { "title": "Consul for Ghana Officially Commissioned", "url": "https://www.royalgazette.com/archive/lifestyle/article/20120922/consul-for-ghana-officially-commissioned/", "source": "Royal Gazette", "date": "2012" },
+    { "title": "Eye Surgeon Named Ghana's Bermuda Honorary Consul", "url": "https://www.royalgazette.com/other/news/article/20110124/eye-surgeon-named-ghanas-bermuda-honorary-consul/", "source": "Royal Gazette", "date": "2011" }
+  ]
+}
