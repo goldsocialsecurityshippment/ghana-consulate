@@ -6,34 +6,33 @@ import { ArrowRight, FileText, Users, HelpCircle, Newspaper, Globe, Clock, Mail,
 const slides = [
   {
     id: 1,
-    title: 'H.E. The President of Ghana',
-    subtitle: 'Republic of Ghana',
+    title: 'H.E. John Dramani Mahama',
+    subtitle: 'President of the Republic of Ghana',
     bg: 'from-ghana-black to-ghana-green-dark',
-    placeholder: true,
+    image: '/president.png',
   },
   {
     id: 2,
-    title: 'Minister of Foreign Affairs',
-    subtitle: 'Republic of Ghana',
+    title: 'Hon. Samuel Okudzeto Ablakwa',
+    subtitle: 'Minister of Foreign Affairs, Republic of Ghana',
     bg: 'from-ghana-black to-blue-900',
-    placeholder: true,
+    image: '/minister.png',
   },
   {
     id: 3,
-    title: 'High Commissioner',
-    subtitle: 'Ghana High Commission, UK',
+    title: 'H.E. Mrs. Sabah Zita Benson',
+    subtitle: 'High Commissioner, Ghana High Commission UK',
     bg: 'from-ghana-black to-ghana-red-dark',
-    placeholder: true,
+    image: '/highcommissioner.png',
   },
   {
     id: 4,
     title: 'Ronita Teye-Botchway',
     subtitle: 'Honorary Consul of Ghana, Bermuda',
     bg: 'from-ghana-black to-ghana-green-dark',
-    placeholder: true,
+    image: '/consul.png',
   },
 ];
-
 function HeroSlider() {
   const [current, setCurrent] = useState(0);
 
@@ -74,13 +73,15 @@ function HeroSlider() {
         </svg>
       </div>
 
-      {/* Image placeholder */}
-      <div className="absolute right-0 top-0 bottom-0 w-1/3 hidden lg:flex items-center justify-center opacity-20">
-        <svg viewBox="0 0 80 90" className="w-48 h-48" fill="white">
-          <circle cx="40" cy="28" r="20" />
-          <path d="M5 80c0-19.3 15.7-35 35-35s35 15.7 35 35" />
-        </svg>
-      </div>
+     {/* Slide image */}
+<div className="absolute right-0 top-0 bottom-0 w-2/5 hidden lg:block">
+  <img
+    src={slide.image}
+    alt={slide.title}
+    className="w-full h-full object-cover object-top opacity-40"
+  />
+  <div className="absolute inset-0 bg-gradient-to-r from-ghana-black via-transparent to-transparent" />
+</div>
 
       {/* Content */}
       <div className="relative z-10 page-container py-16">
