@@ -73,11 +73,12 @@ function HeroSlider() {
         </svg>
       </div>
 
-     {/* Slide image */}
+{/* Slide image */}
 <div className="absolute right-0 top-0 bottom-0 w-2/5 hidden lg:block">
   <img
-    src={slide.image}
+    src={`/Downloads/ghana-consulate-bermuda-v3/ghana-consulate-v2/public${slide.image}`}
     alt={slide.title}
+    onError={(e) => { e.currentTarget.style.display = 'none'; }}
     className="w-full h-full object-cover object-top opacity-40"
   />
   <div className="absolute inset-0 bg-gradient-to-r from-ghana-black via-transparent to-transparent" />
