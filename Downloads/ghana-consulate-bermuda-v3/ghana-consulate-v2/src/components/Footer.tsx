@@ -29,7 +29,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 flex-shrink-0 opacity-90">
-                <img src="/coat-of-arms.png" alt="Ghana Coat of Arms" className="w-full h-full object-contain" />
+               <img src="/coat-of-arms.png" alt="Ghana Coat of Arms" className="w-full h-full object-contain" />
               </div>
               <div>
                 <div className="font-serif font-semibold text-white leading-tight text-sm">
