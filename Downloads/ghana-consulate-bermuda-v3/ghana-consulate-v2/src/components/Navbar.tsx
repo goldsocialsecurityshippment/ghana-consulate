@@ -56,7 +56,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             <div className="w-10 h-10 md:w-12 md:h-12 flex-shrink-0">
-              <GhanaCoatOfArms />
+            <img src="/coat-of-arms.png" alt="Ghana Coat of Arms" className="w-full h-full object-contain" />
             </div>
             <div>
               <div className="font-serif font-semibold text-ghana-black text-sm md:text-base leading-tight">
