@@ -8,31 +8,28 @@ const slides = [
     id: 1,
     title: 'H.E. John Dramani Mahama',
     subtitle: 'President of the Republic of Ghana',
-    bg: 'from-ghana-black to-ghana-green-dark',
     image: '/president.png',
   },
   {
     id: 2,
     title: 'Hon. Samuel Okudzeto Ablakwa',
     subtitle: 'Minister of Foreign Affairs, Republic of Ghana',
-    bg: 'from-ghana-black to-blue-900',
     image: '/minister.png',
   },
   {
     id: 3,
-    title: 'H.E. Mrs. Sabah Zita Benson',
+    title: 'H.E. Papa Owusu-Ankomah',
     subtitle: 'High Commissioner, Ghana High Commission UK',
-    bg: 'from-ghana-black to-ghana-red-dark',
     image: '/highcommissioner.png',
   },
   {
     id: 4,
     title: 'Ronita Teye-Botchway',
     subtitle: 'Honorary Consul of Ghana, Bermuda',
-    bg: 'from-ghana-black to-ghana-green-dark',
     image: '/consul.png',
   },
 ];
+
 function HeroSlider() {
   const [current, setCurrent] = useState(0);
 
@@ -49,63 +46,37 @@ function HeroSlider() {
   const slide = slides[current];
 
   return (
-    <section className="relative min-h-[560px] md:min-h-[620px] flex items-center overflow-hidden">
-      {/* Background */}
-      <div className={`absolute inset-0 bg-gradient-to-br ${slide.bg} transition-all duration-700`} />
-
-      {/* Flag stripe */}
-      <div className="absolute left-0 top-0 bottom-0 flex">
-        <div className="w-1.5 bg-ghana-red opacity-80" />
-        <div className="w-1.5 bg-ghana-gold opacity-80" />
-        <div className="w-1.5 bg-ghana-green opacity-80" />
+    <section className="relative min-h-[560px] md:min-h-[680px] flex items-end overflow-hidden">
+      {/* Full background image */}
+      <div className="absolute inset-0">
+        <img
+          src={slide.image}
+          alt={slide.title}
+          className="w-full h-full object-cover object-top transition-all duration-700"
+        />
+        {/* Dark overlay at bottom for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
       </div>
 
-      {/* Kente pattern */}
-      <div className="absolute inset-0 opacity-[0.04]">
-        <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
-          <pattern id="kente" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-            <rect x="0" y="0" width="10" height="10" fill="#D4A017" />
-            <rect x="10" y="10" width="10" height="10" fill="#D4A017" />
-            <rect x="0" y="10" width="10" height="10" fill="#006B3F" />
-            <rect x="10" y="0" width="10" height="10" fill="#CF0A0A" />
-          </pattern>
-          <rect width="100" height="100" fill="url(#kente)" />
-        </svg>
+      {/* Ghana flag stripe left accent */}
+      <div className="absolute left-0 top-0 bottom-0 flex z-10">
+        <div className="w-1.5 bg-ghana-red opacity-90" />
+        <div className="w-1.5 bg-ghana-gold opacity-90" />
+        <div className="w-1.5 bg-ghana-green opacity-90" />
       </div>
 
-{/* Slide image */}
-<div className="absolute right-0 top-0 bottom-0 w-2/5 hidden lg:block">
-  <img
-    src={`/Downloads/ghana-consulate-bermuda-v3/ghana-consulate-v2/public${slide.image}`}
-    alt={slide.title}
-    onError={(e) => { e.currentTarget.style.display = 'none'; }}
-    className="w-full h-full object-cover object-top opacity-40"
-  />
-  <div className="absolute inset-0 bg-gradient-to-r from-ghana-black via-transparent to-transparent" />
-</div>
-
-      {/* Content */}
-      <div className="relative z-10 page-container py-16">
+      {/* Content at bottom */}
+      <div className="relative z-10 page-container pb-16 pt-8 w-full">
         <div className="max-w-2xl">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6">
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-4">
             <span className="text-sm text-ghana-gold font-medium">🇬🇭 Republic of Ghana</span>
-            <span className="text-gray-400 text-sm">•</span>
-            <span className="text-sm text-gray-300">Hamilton, Bermuda</span>
+            <span className="text-gray-300 text-sm">•</span>
+            <span className="text-sm text-gray-200">Hamilton, Bermuda</span>
           </div>
-
-          <p className="text-ghana-gold font-semibold text-sm uppercase tracking-widest mb-2">
-            Welcome to the Honourary Consulate of Ghana
-          </p>
-
-          <h1 className="font-serif text-3xl md:text-5xl font-semibold text-white leading-tight mb-2 transition-all duration-500">
+          <h1 className="font-serif text-3xl md:text-5xl font-semibold text-white leading-tight mb-1 drop-shadow-lg">
             {slide.title}
           </h1>
-          <p className="text-ghana-gold text-lg mb-6 font-medium">{slide.subtitle}</p>
-
-          <p className="text-gray-300 leading-relaxed max-w-xl mb-8">
-            Over the years since its formation, the Consulate has served Ghanaians and the Bermudian community in diverse ways and continually seeks ways to improve on its service.
-          </p>
-
+          <p className="text-ghana-gold text-lg mb-6 font-medium drop-shadow">{slide.subtitle}</p>
           <div className="flex flex-wrap gap-3">
             <a
               href="https://dashboard.ecimsglobal.com/#/login"
@@ -115,7 +86,7 @@ function HeroSlider() {
             >
               Apply for Visa <ArrowRight className="w-4 h-4" />
             </a>
-            <Link href="/consulate/welcome" className="inline-flex items-center gap-2 border border-white/30 text-white px-6 py-3 rounded text-sm md:text-base font-medium hover:bg-white/10 transition-colors">
+            <Link href="/consulate/welcome" className="inline-flex items-center gap-2 border border-white/40 text-white px-6 py-3 rounded text-sm md:text-base font-medium hover:bg-white/10 transition-colors backdrop-blur-sm">
               Welcome Message
             </Link>
           </div>
@@ -125,30 +96,27 @@ function HeroSlider() {
       {/* Slider controls */}
       <button
         onClick={prev}
-        className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors z-20"
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center text-white transition-colors z-20 backdrop-blur-sm"
       >
         <ChevronLeft className="w-5 h-5" />
       </button>
       <button
         onClick={next}
-        className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors z-20"
+        className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center text-white transition-colors z-20 backdrop-blur-sm"
       >
         <ChevronRight className="w-5 h-5" />
       </button>
 
       {/* Dots */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20">
         {slides.map((_, i) => (
           <button
             key={i}
             onClick={() => setCurrent(i)}
-            className={`w-2 h-2 rounded-full transition-all ${i === current ? 'bg-ghana-gold w-6' : 'bg-white/40'}`}
+            className={`h-2 rounded-full transition-all duration-300 ${i === current ? 'bg-ghana-gold w-6' : 'bg-white/50 w-2'}`}
           />
         ))}
       </div>
-
-      {/* Straight bottom edge */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gray-200" />
     </section>
   );
 }
@@ -202,36 +170,20 @@ function QuickLinks() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {links.map((link) =>
             link.external ? (
-              <a
-                key={link.href}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="card group p-6 flex flex-col gap-3 hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${link.color} group-hover:scale-110 transition-transform`}>
-                  {link.icon}
-                </div>
+              <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer"
+                className="card group p-6 flex flex-col gap-3 hover:-translate-y-1 transition-all duration-300">
+                <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${link.color} group-hover:scale-110 transition-transform`}>{link.icon}</div>
                 <h3 className="font-serif font-semibold text-ghana-black text-lg group-hover:text-ghana-red transition-colors">{link.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed flex-1">{link.description}</p>
-                <div className="flex items-center gap-1.5 text-ghana-red text-sm font-medium">
-                  Apply now <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                </div>
+                <div className="flex items-center gap-1.5 text-ghana-red text-sm font-medium">Apply now <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" /></div>
               </a>
             ) : (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="card group p-6 flex flex-col gap-3 hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${link.color} group-hover:scale-110 transition-transform`}>
-                  {link.icon}
-                </div>
+              <Link key={link.href} href={link.href}
+                className="card group p-6 flex flex-col gap-3 hover:-translate-y-1 transition-all duration-300">
+                <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${link.color} group-hover:scale-110 transition-transform`}>{link.icon}</div>
                 <h3 className="font-serif font-semibold text-ghana-black text-lg group-hover:text-ghana-red transition-colors">{link.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed flex-1">{link.description}</p>
-                <div className="flex items-center gap-1.5 text-ghana-red text-sm font-medium">
-                  Learn more <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                </div>
+                <div className="flex items-center gap-1.5 text-ghana-red text-sm font-medium">Learn more <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" /></div>
               </Link>
             )
           )}
@@ -248,23 +200,16 @@ function WelcomeStrip() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-ghana-red text-sm font-semibold uppercase tracking-widest mb-3">Our Mission</p>
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-ghana-black leading-tight mb-4">
-              Serving Ghana &amp; Bermuda
-            </h2>
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-ghana-black leading-tight mb-4">Serving Ghana &amp; Bermuda</h2>
             <div className="w-16 h-1 bg-ghana-gold mb-6 rounded-full" />
             <p className="text-gray-600 leading-relaxed mb-4">
-              The Honourary Consulate of Ghana in Bermuda serves as an important link between the Republic of Ghana
-              and the island of Bermuda. We are dedicated to supporting Ghanaians living and working in Bermuda,
-              and to fostering strong people-to-people connections between our two communities.
+              The Honourary Consulate of Ghana in Bermuda serves as an important link between the Republic of Ghana and the island of Bermuda. We are dedicated to supporting Ghanaians living and working in Bermuda, and to fostering strong people-to-people connections between our two communities.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Our services cover visa applications, welfare support for Ghanaian nationals, promotion of Ghana as
-              a tourist and investment destination, and facilitation of official consular duties.
+              Our services cover visa applications, welfare support for Ghanaian nationals, promotion of Ghana as a tourist and investment destination, and facilitation of official consular duties.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link href="/consulate/welcome" className="btn-primary">
-                Read Welcome Message <ArrowRight className="w-4 h-4" />
-              </Link>
+              <Link href="/consulate/welcome" className="btn-primary">Read Welcome Message <ArrowRight className="w-4 h-4" /></Link>
               <Link href="/contact" className="btn-outline">Contact Us</Link>
             </div>
           </div>
@@ -295,8 +240,7 @@ function GhanaCallout() {
         <p className="text-ghana-gold text-sm font-semibold uppercase tracking-widest mb-3">Republic of Ghana</p>
         <h2 className="font-serif text-2xl md:text-3xl font-semibold text-white mb-4">"Freedom and Justice"</h2>
         <p className="text-green-100 max-w-2xl mx-auto text-sm md:text-base leading-relaxed mb-6">
-          Ghana is a vibrant, democratic nation in West Africa. Discover investment opportunities,
-          tourism, trade, and the rich culture of Ghana.
+          Ghana is a vibrant, democratic nation in West Africa. Discover investment opportunities, tourism, trade, and the rich culture of Ghana.
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
           <a href="https://gipc.gov.gh/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-ghana-gold text-ghana-black font-semibold px-5 py-2.5 rounded hover:bg-ghana-gold-light transition-colors text-sm">
@@ -326,9 +270,7 @@ function ContactStrip() {
               <Mail className="w-4 h-4 text-ghana-red" />info@ghanahc.bm
             </a>
           </div>
-          <Link href="/contact" className="btn-primary flex-shrink-0">
-            Contact Us <ArrowRight className="w-4 h-4" />
-          </Link>
+          <Link href="/contact" className="btn-primary flex-shrink-0">Contact Us <ArrowRight className="w-4 h-4" /></Link>
         </div>
       </div>
     </section>
