@@ -18,7 +18,7 @@ const slides = [
   },
   {
     id: 3,
-    title: 'H.E. Papa Owusu-Ankomah',
+    title: 'H.E. Mrs. Sabah Zita Benson',
     subtitle: 'High Commissioner, Ghana High Commission UK',
     image: '/highcommissioner.png',
   },
@@ -46,13 +46,13 @@ function HeroSlider() {
   const slide = slides[current];
 
   return (
-    <section className="relative min-h-[560px] md:min-h-[680px] flex items-end overflow-hidden">
+   <section className="relative min-h-[600px] md:min-h-[750px] flex items-end overflow-hidden">
       {/* Full background image */}
       <div className="absolute inset-0">
         <img
           src={slide.image}
           alt={slide.title}
-          className="w-full h-full object-cover object-top transition-all duration-700"
+       className="w-full h-full object-contain object-center transition-all duration-700"
         />
         {/* Dark overlay at bottom for text readability */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
