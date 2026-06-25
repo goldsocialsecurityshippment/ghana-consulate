@@ -1,0 +1,259 @@
+@import "tailwindcss";
+
+:root {
+  --accent: #2563EB;
+  --accent-light: #3b82f6;
+  --accent-dim: #1d4ed8;
+  --bg: #F9FAFB;
+  --card-bg: #FFFFFF;
+  --border: #E5E7EB;
+  --border-strong: #D1D5DB;
+  --text: #0F172A;
+  --text-secondary: #64748B;
+  --text-muted: #94A3B8;
+  --gold: #C9A84C;
+  --gold-light: #e4c87a;
+  --surface: #F1F5F9;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+::selection {
+  background: rgba(37,99,235,0.12);
+  color: var(--text);
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent-dim); }
+
+/* ─── Navigation ─── */
+.nav-link {
+  position: relative;
+  font-size: 0.8125rem;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color 0.18s;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--text);
+  transition: width 0.22s ease;
+}
+.nav-link:hover { color: var(--text); }
+.nav-link:hover::after { width: 100%; }
+
+/* ─── Buttons ─── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8125rem 1.75rem;
+  background: var(--text);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+  border-radius: 6px;
+  transition: background 0.18s, transform 0.14s, box-shadow 0.18s;
+}
+.btn-primary:hover {
+  background: var(--accent);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(37,99,235,0.25);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8125rem 1.75rem;
+  border: 1.5px solid var(--border-strong);
+  color: var(--text);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  border-radius: 6px;
+  background: transparent;
+  transition: border-color 0.18s, background 0.18s, color 0.18s;
+}
+.btn-outline:hover {
+  border-color: var(--accent);
+  background: rgba(37,99,235,0.04);
+  color: var(--accent);
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8125rem 1.75rem;
+  background: #25D366;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  letter-spacing: 0.03em;
+  border-radius: 6px;
+  transition: background 0.18s, transform 0.14s;
+}
+.btn-whatsapp:hover {
+  background: #1db954;
+  transform: translateY(-1px);
+}
+
+/* ─── Cards ─── */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+/* Phone showcase card — larger hover lift for product cards */
+.phone-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+  overflow: hidden;
+}
+.phone-card:hover {
+  border-color: #94a3b8;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+}
+
+/* ─── Section label — the visual signature: left rule + caps label ─── */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.section-label::before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 1.5px;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+/* ─── Dividers ─── */
+.divider { height: 1px; background: var(--border); }
+
+/* ─── Forms ─── */
+.form-input {
+  width: 100%;
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: 7px;
+  padding: 0.8125rem 1rem;
+  color: var(--text);
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.18s, box-shadow 0.18s;
+}
+.form-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.07);
+}
+.form-input::placeholder { color: var(--text-muted); }
+
+.form-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+
+/* ─── iPhone image in cards ─── */
+.phone-img-bg {
+  background: linear-gradient(145deg, #F0F4FF 0%, #EEF2FF 100%);
+}
+
+/* ─── Editorial strip ─── */
+.editorial-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.editorial-strip-item {
+  padding: 1.5rem 1.75rem;
+  border-right: 1px solid var(--border);
+}
+.editorial-strip-item:last-child { border-right: none; }
+
+@media (max-width: 768px) {
+  .editorial-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .editorial-strip-item:nth-child(2) { border-right: none; }
+  .editorial-strip-item:nth-child(3) { border-top: 1px solid var(--border); }
+}
+
+@media (max-width: 480px) {
+  .editorial-strip { grid-template-columns: 1fr; }
+  .editorial-strip-item { border-right: none; border-top: 1px solid var(--border); }
+  .editorial-strip-item:first-child { border-top: none; }
+}
+
+/* ─── Heading underline accent ─── */
+.heading-underline::after {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: var(--accent);
+  margin-top: 0.875rem;
+}
+
+/* ─── Hero dark button ─── */
+.btn-hero-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8125rem 1.75rem;
+  background: #fff;
+  color: #0F172A;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+  border-radius: 6px;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  transition: background 0.18s, transform 0.14s, box-shadow 0.18s;
+}
+.btn-hero-primary:hover {
+  background: rgba(255,255,255,0.9);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
